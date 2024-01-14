@@ -1,0 +1,103 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+input {
+  margin: 0;
+}
+.form {
+  width: 360px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+.delay-input {
+  padding: 8px 16px;
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  outline: none;
+  margin-bottom: 16px;
+}
+
+.delay-input:hover {
+  border-color: #000;
+}
+
+.delay-input:focus {
+  border-color: #4e75ff;
+}
+
+.state-field {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 0;
+  padding-left: 28px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.state-field:hover,
+.state-field:focus {
+  border-color: #000;
+}
+
+.state-labels-wrapper {
+  display: flex;
+  gap: 48px;
+  padding: 18px 48px 12px 20px;
+  justify-content: center;
+}
+.state-input {
+  width: 20px;
+  height: 20px;
+}
+
+.state-input-wrapper {
+  letter-spacing: 0px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.submit-button {
+  padding: 8px 16px;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  border-radius: 8px;
+  background: #4e75ff;
+  border-width: 0px;
+}
+.submit-button:hover {
+  background-color: #6c8cff;
+}
