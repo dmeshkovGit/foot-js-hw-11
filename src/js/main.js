@@ -65,7 +65,8 @@ function createGallery() {
         .then(res => { return res.json() })
         .then(res => {
             if (res.hits.length === 0) {
-                clearHtmlElement(gallery);                getError("Sorry, there are no images matching your search query. Please try again!");
+                clearHtmlElement(gallery);
+                getError("Sorry, there are no images matching your search query. Please try again!");
             } else {
                 renderImages(res.hits);
                 new SimpleLightbox('.gallery a',{
