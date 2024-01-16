@@ -80,19 +80,20 @@ function createGallery() {
     searchInput.value = "";
    
 }
+const searchForm = document.querySelector(".search-form")
 const searchInput = document.querySelector(".search-form input");
-const searchButton = document.querySelector(".search-form button");
 const gallery = document.querySelector(".gallery");
 const BASE_URL = "https://pixabay.com/api/";
 const API_KEY = "41789210-2260d99c0029effaf849d1b98";
 
 
-searchButton.addEventListener("click", () => {
-    createGallery();  
+searchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (searchInput.value.trim() !== "") {
+       createGallery();   
+    } else {
+        getError("Please fill the query")
+    }
 });
-searchInput.addEventListener("keyup", (event) => {
-if (event.keyCode === 13) {
-   createGallery();  
-}
-});
+
 
