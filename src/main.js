@@ -48,7 +48,7 @@ function getError(errorText) {
         titleSize: "16px",
         titleLineHeight: "24px",
         timeout: 3000,
-        iconUrl: "./img/error-icon.svg",
+        iconUrl: "/src/img/error-icon.svg",
         theme: "dark",
     })
 };
