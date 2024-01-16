@@ -2,6 +2,7 @@ import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
+import errorIconUrl from "./img/error-icon.svg"
 
 function renderImages(images = []) {
     return gallery.innerHTML = images.reduce((html, { webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => {
@@ -48,7 +49,7 @@ function getError(errorText) {
         titleSize: "16px",
         titleLineHeight: "24px",
         timeout: 3000,
-        iconUrl: "/src/img/error-icon.svg",
+        iconUrl: `${errorIconUrl}`,
         theme: "dark",
     })
 };
