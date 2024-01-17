@@ -61,7 +61,8 @@ function clearHtmlElement(htmlElement) {
 }
 function createGallery() {
     renderLoading(gallery);
-       const url =BASE_URL + `?key=${API_KEY}&q=${searchInput.value.trim()}&image_type=photo&orientation=horizontal&safesearch=false`
+       const API_KEY = "41789210-2260d99c0029effaf849d1b98";  
+       const url ="https://pixabay.com/api/" + `?key=${API_KEY}&q=${searchInput.value.trim()}&image_type=photo&orientation=horizontal&safesearch=true`
     fetch(url)
         .then(res => { return res.json() })
         .then(res => {
@@ -83,8 +84,6 @@ function createGallery() {
 const searchForm = document.querySelector(".search-form")
 const searchInput = document.querySelector(".search-form input");
 const gallery = document.querySelector(".gallery");
-const BASE_URL = "https://pixabay.com/api/";
-const API_KEY = "41789210-2260d99c0029effaf849d1b98";
 
 
 searchForm.addEventListener("submit", (event) => {
